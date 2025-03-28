@@ -49,7 +49,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/bank-clients
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-clients:5432/bank-clients
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: pass123
       SPRING_RABBITMQ_HOST: rabbitmq
@@ -68,7 +68,7 @@ services:
     ports:
       - "8081:8081"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5433/bank-transactions
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-transactions:5432/bank-transactions
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: pass123
       SPRING_RABBITMQ_HOST: rabbitmq
