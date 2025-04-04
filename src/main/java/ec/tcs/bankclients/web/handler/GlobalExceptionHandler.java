@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
                         exception.getMessage(),
                         request.getDescription(false)
                 ),
-                HttpStatus.BAD_REQUEST
+                HttpStatus.NOT_FOUND
         );
     }
 

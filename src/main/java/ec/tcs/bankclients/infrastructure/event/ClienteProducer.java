@@ -14,8 +14,8 @@ public class ClienteProducer {
     private final Logger log = LoggerFactory.getLogger(ClienteProducer.class);
 
     private final RabbitTemplate rabbitTemplate;
-    private static final String EXCHANGE = "clienteExchange";
-    private static final String ROUTING_KEY = "cliente.created";
+    private static final String EXCHANGE = "clientes.exchange";
+    private static final String ROUTING_KEY = "clientes.created";
 
     public void enviarEventoClienteCreado(CuentaDTO cuentaDTO) {
         rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, cuentaDTO);

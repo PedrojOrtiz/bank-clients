@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "5587b36c-6f0b-4b3d-8a55-9a0e313564ba",
+		"name": "Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32838946",
+		"_collection_link": "https://ntt222-3799.postman.co/workspace/Sofka~48fd8020-a8dd-4b48-961c-38ec8b8911a7/collection/32838946-5587b36c-6f0b-4b3d-8a55-9a0e313564ba?action=share&source=collection_link&creator=32838946"
+	},
+	"item": [
+		{
+			"name": "Create Cliente Cuenta Async",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cliente\": {\n      \"clienteId\" : \"CLI1997\",\n      \"nombre\": \"Pedro Ortiz S.\",\n      \"direccion\": \"Cdla de Medicos\",\n      \"telefono\": \"098874587\",\n      \"contrasena\": \"1245\",\n      \"estado\": true\n    },\n    \"numeroCuenta\": \"499997\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 0,\n    \"estado\": true\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes/cuenta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"cuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cliente by clienteId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/CLI001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"CLI001"
+					],
+					"query": [
+						{
+							"key": "clienteId",
+							"value": "CLI001",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
