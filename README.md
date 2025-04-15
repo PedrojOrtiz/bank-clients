@@ -1,6 +1,6 @@
 # 🏦 Bank Clients Microservice
 
-This microservice handles all **person** and **client** information within the banking platform. It works in coordination with the `bank-transactions` microservice for account validation and transaction orchestration using a **Saga choreography architecture** and a **Template Method pattern** for business logic.
+This microservice handles all **person** and **client** information within the banking platform. It works in coordination with the `bank-transactions` microservice for account validation and transaction choreografication using a **Saga choreography architecture** and a **Template Method pattern** for business logic.
 
 ---
 
